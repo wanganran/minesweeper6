@@ -1,0 +1,194 @@
+body {
+	
+}
+h1{
+	font-family:System;
+	color:Green;
+	text-align:center;
+	font-size:x-large;
+	
+	}
+h1 span{
+	font-family:幼圆;
+	color:red;
+	font-size:x-large;
+	position:relative;
+	top:-1px;
+}
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-weight:bold;
+	font-size:medium;
+}
+.center{
+	text-align:center;
+}
+.sprite
+{
+	background:url(sprite.gif)
+}
+.flag{
+	background-position: -14px -763px;
+	width:20px;
+	height:20px;
+}
+.bomb{
+	background-position: -14px -716px;
+	width:20px;
+	height:20px;
+}
+.cell,.cell3d,.cellg,.cell3dg,.cellb,.cellbg
+{
+	position:absolute;
+	
+	width:30px;
+	height:27px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:27px;
+	font-size:small;
+	font-weight:bold;
+}
+.cell
+{
+	background-position: -14px -338px;
+}
+.cell3d
+{
+	background-position: -14px -14px;
+}
+.cellg
+{
+	background-position: -14px -500px;
+}
+.cell3dg
+{
+	background-position: -14px -176px;
+}
+.cellb
+{
+	background-position: -14px -662px;
+}
+.cellbg{
+	background:none;
+}
+.cellchecked,.cellchecked3d,.cellcheckedg,.cellchecked3dg,.cellcheckedb,.cellcheckedbg
+{
+	position:absolute;
+	width:30px;
+	height:27px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:27px;
+	font-size:small;
+	font-weight:bold;
+}
+.cellchecked
+{
+	background-position: -14px -446px;
+}
+.cellchecked3d
+{
+	background-position: -14px -122px;
+}
+.cellcheckedg
+{
+	background-position: -14px -608px;
+}
+.cellchecked3dg
+{
+	background-position: -14px -284px;
+}
+.cellcheckedb,.cellcheckedbg
+{
+	background:none;
+}
+#canvas
+{
+	position:relative;
+	margin:0px auto 0px auto;
+	
+	
+}
+.mask,.mask3d,.maskg,.mask3dg,.maskb,.maskbg
+{
+	position:absolute;
+	width:30px;
+	height:27px;
+	top:-30px;
+	left:-30px;
+	z-index:200;
+	background-repeat:no-repeat;
+	
+}
+.mask
+{
+	background-position: -14px -392px;
+}
+.mask3d
+{
+	background-position: -14px -68px;
+}
+.maskg
+{
+	background-position: -14px -554px;
+}
+.mask3dg
+{
+	background-position: -14px -230px;
+}
+.maskb,.maskbg
+{
+	background:none;
+}
+#maskimg{
+	z-index:300;
+}
+#cells
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+}
+#panel
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	width:500px;
+	margin:0px auto 0px auto;
+	display:none;
+	min-width:200px;
+}
+#panelright
+{
+	float:right;
+	width:50px;
+	text-align:right;
+	font-family:System;
+	color:red;
+}
+#panelleft
+{
+	float:left;
+	width:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:red;
+}
+#panelcenter
+{
+	text-align:center;
+	font-size:small;
+}
+#msg
+{
+	text-align:center;
+}
+.hide
+{
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}

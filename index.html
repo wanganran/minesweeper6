@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!--
+		Mine Sweeper
+		Anran Wang created at 2009.6.6
+		Translated into English at 2013.8.3
+		Homepage:http://www.wanganran.com
+		-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mine Sweeper</title>
+		
+		<link href="base.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="cookie.js"></script>
+		<script type="text/javascript" src="base.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+    	<div id="caption">
+        <h1>Hexagonal <span>Mine Sweeper</span></h1>
+		<h2>Designed & Developed by Wang Anran</h2>
+		<p class="center">Style:<select id="styleselect"><option value="3d" selected="selected">3D</option><option value="flat">Flat</option><option value="blank">Blank</option></select>
+		&nbsp;Color: <select id="colorselect"><option selected="selected" value="green">Green</option><option value="blue">Blue</option></select>
+		&nbsp;Size: <select id="levelselect" onchange="LevelChanged(this)">
+				<option value="level1">Easy（10*10，10 bombs）</option>
+				<option value="level2" selected="selected">Medium（20*15，50 bombs）</option>
+				<option value="level3">Difficult（30*20，100 bombs）</option>
+				<option value="leveln">Custom</option></select>
+		</p>
+		<p class="center">Line: <input id="txtheight" disabled="true" type="text" value="15"/>&nbsp;Column: <input id="txtwidth" disabled="true" type="text" value="20"/>&nbsp;Bomb: <input id="txtbombnum" disabled="true" type="text" value="50"/>
+		<p class="center"><a href="javascript:Start();">Start Game!</a>&nbsp;<a href="javascript:ShowTable()">Top Score</a></p>
+		</div>
+		<div id="panel">
+			<div id="panelleft"></div>
+			<div id="panelright"></div>
+			<div id="panelcenter"><a href="javascript:HideCaption()">Hide/show caption</a></div>
+		</div>
+		<hr>
+		<map id="map" name="map">
+			
+		</map>
+		<div id="canvas">
+			<div id="cells">
+				
+			</div>
+			<div id="mask">
+				<div id="shade" class="sprite" style="display:none"></div>
+				<img id="maskimg" src="transparent.gif" usemap="#map"  style="width:10px; height:10px; border-style:none; position:absolute;"/>
+			</div>
+		</div>
+		<p id="msg"><a href="http://www.wanganran.com" target="_blank">My Homepage</a></p>
+		<!--<div class="hide"><img src="clickedg.gif"/><img src="clicked3dg.gif"/><img src="clicked.gif"/><img src="clicked3d.gif"/> </div>-->
+    </body>
+</html>
